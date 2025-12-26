@@ -31,8 +31,7 @@ El proyecto incluye **tests unitarios**, **tests de integración** y **scripts d
 
 ### Tests Unitarios
 
-```text
-test/FundMeTest.t.sol
+`test/FundMeTest.t.sol`
 
 - Validación del mínimo en USD
 - Verificación del owner
@@ -40,5 +39,33 @@ test/FundMeTest.t.sol
 - Withdraw con uno y múltiples funders
 - Comparación de consumo de gas
 
-Tests de Integración
+### Tests de Integración
+
+`test/integration/InteractionsTest.sol`
+
+- Ejecución de scripts reales
+- Flujo completo fund → withdraw
+
+### Ejecutar tests:
+
+`forge test`
+
+## Scripts
+
+`DeployFundMe.s.sol`
+
+`Interactions.s.sol` (`FundFundMe`,`WithdrawFundMe`)
+
+### Uso:
+
 ```
+make deploy
+make fund
+make withdraw
+```
+
+## Redes Soportadas
+
+- Anvil (local)
+- Sepolia
+- zkSync (local / testnet)
