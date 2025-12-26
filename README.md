@@ -66,6 +66,8 @@ make fund
 make withdraw
 ```
 
+---
+
 ## Redes Soportadas
 
 - Anvil (local)
